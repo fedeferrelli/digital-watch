@@ -11,44 +11,27 @@ function clock(){
   fecha = new Date();
 
   var dia = fecha.getDate();
+  
+  var semana=["Domingo","Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"]
+  var dia_nombre = semana[fecha.getDay()];
+
   var mes = fecha.getMonth()+1;
 
   var mes_nombres=["enero","febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
-
   var mes_nombre = mes_nombres[fecha.getMonth()]
-   
-
+  
   var anio = fecha.getFullYear();
-
   var hora = fecha.getHours();
   var minutos = fecha.getMinutes();
   var segundos = fecha.getSeconds();
 
-  var semana=["Domingo","Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"]
 
-  var dia_nombre = semana[fecha.getDay()];
-
-  
-  if(dia<10){
-   var dia = "0" + dia};
-
-  if(mes<10){
-   var mes = "0" + mes};
-
-  if(hora<10){
-   var hora = "0" + hora};
-
-  if(minutos<10){
-   var minutos = "0" + minutos};
-
-  if(segundos<10){
-   var segundos = "0" + segundos};
    
-  reloj_horas.innerHTML = `${hora}:${minutos}`
-  reloj_segundos.innerHTML = `${segundos}`
+  reloj_horas.innerHTML = `${"0"+hora}`.slice(-2)+":"+`${"0"+minutos}`.slice(-2)
+  reloj_segundos.innerHTML = `${"0"+segundos}`.slice(-2)
  
   reloj_dia_nombre.innerHTML =`${dia_nombre}`
-  reloj_dia_numero.innerHTML =`${dia}`
+  reloj_dia_numero.innerHTML =`${"0"+dia}`.slice(-2)
   reloj_mes.innerHTML =`${mes_nombre}`
   reloj_anio.innerHTML =`${anio}`
 
@@ -56,17 +39,17 @@ function clock(){
   var visibilidad = parseInt(hora)*3600+parseInt(minutos)*60+parseInt(segundos)
 
   body.classList.remove("amanecer", "dia", "anochecer", "noche") 
-  if(visibilidad>=23400 && visibilidad<32400){
+  
+  if(visibilidad>=23400 && visibilidad<30600){
       body.classList.add("amanecer")} 
- else if (visibilidad>=32400 && visibilidad<66600){
+
+ else if (visibilidad>=30600 && visibilidad<66600){
     body.classList.add("dia")}
+
  else if (visibilidad>=66600 && visibilidad<72000){
     body.classList.add("anochecer")}
- else {body.classList.add("noche")}
-    
 
+ else {body.classList.add("noche")}
 }
 
-
-
-setInterval(clock, 100);
+setInterval(clock, 1000);
