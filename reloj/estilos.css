@@ -1,0 +1,159 @@
+body{
+    width: 80%;
+    margin: auto;
+    background-color: rgb(73, 72, 73);
+}
+
+.botonera{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color:   rgb(73, 72, 73);
+    flex-direction: flex row;
+}
+
+.boton{ 
+    background-color:  rgb(73, 72, 73); 
+    border: none;
+    color: white;
+    padding: 1% 1.5%;
+    text-align: center;
+    font-size: 1.25vw;
+    transition-duration: 0.4s;   
+}
+
+.boton:hover {
+    color: grey;
+  }
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    background-image: url(trs-image.jpg);
+    background-repeat: no-repeat;
+    height: 80%;
+}
+
+
+h1{
+    width: 30%;
+    height: auto;
+    color: white;
+    text-align: center;
+    font-size: 15vh;
+
+   
+}
+
+.show{
+    width: 45%;
+    height: auto;
+    color: white;
+    text-align: center;
+    font-size: 3vh;
+    font-style: italic;   
+}
+
+
+.mick-t{  
+}.mick-p{
+    width: 25%;
+    margin-left: 72.5%;   
+}
+
+
+
+.keith-t{
+    margin-left: 42.5%;
+    margin-top: -0.25%;  
+}.keith-p{
+    width: 50%;
+    margin-left: 5%;  
+    margin-top: 12.0%; 
+}
+
+.charlie-t{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;   
+} .charlie-p{
+    width: 30%;
+    margin-left: 47.5%;  
+    margin-top: 6%; 
+}
+
+.ron-t{
+    width: 30%;
+    margin-left: 7.5%;
+    margin-top: 5%; 
+} .ron-p{
+    width: 35%;
+    margin-left: 5%;  
+    margin-top: 0%; 
+}
+
+.brian-t{
+    width: 30%;
+    margin-left: 7.5%;
+    margin-top: 1%; 
+} .brian-p{
+    width: 35%;
+    margin-left: 5%;  
+    margin-top: 5%; 
+}
+
+.bill-t{
+    width: 30%;
+    margin-left: 63%;
+    margin-top: 10%; 
+} .bill-p{
+    width: 22%;
+    margin-left: 1.2%;  
+    margin-top: -6%; 
+}
+
+.taylor-t{
+    width: 60%;
+    margin-left: 45.5%;
+    margin-top: -15.5; 
+} .taylor-p{
+    width: 22%;
+    margin-left: 60%;  
+    margin-top: -5%; 
+}
+
+
+
+
+
+.mick{
+    background-image: url(mj-image.jpg);
+    text-align: left;
+}
+
+.keith{
+    background-image: url(kr-image.jpg)
+}
+
+.charlie{
+    background-image: url(cw-image.jpg)
+}
+
+.ron{
+    background-image: url(rw-image.jpg)
+}
+
+.brian{
+    background-image: url(bj-image.jpg)
+}
+
+.bill{
+    background-image: url(bw-image.jpg)
+}
+
+.taylor{
+    background-image: url(mt-image.jpg)
+}
+
+
+
